@@ -1,0 +1,32 @@
+extends ../components/layout
+
+
+
+block content
+ div#login.container
+    div: form(method='#', class='form-vertical')
+      fieldset
+        legend: strong.text-info Registration page
+
+        div.form-group
+          label Войти:
+          input.form-control(name='login', autofocus)
+
+        div.form-group
+          label Почта:
+          input.form-control(name='email', autofocus)
+
+        div.form-group
+        label Имя пользователя:
+        input.form-control(name='username', autofocus)
+
+        div.form-group
+          label Пароль:
+          input.form-control(name='password', type='password')
+
+        div.form-group
+          label Повторите пароль:
+          input.form-control(name='password', type='password')
+
+        div.form-actions
+          input.btn.btn-primary(type='submit', value='Sign Up')

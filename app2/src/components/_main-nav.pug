@@ -1,0 +1,28 @@
+mixin main-nav(activeRoute)
+  div(class="navbar-nav mr-auto")
+    a(
+      href="/"
+      class="nav-link",
+      class=`${activeRoute === "/" && "router-link-exact-active"}`
+    ) Главная
+    a(
+      href="/promo"
+      class="nav-link",
+      class=`${activeRoute === "/promo" && "router-link-exact-active"}`
+    ) Промо
+    a(
+      href="/catalog"
+      class="nav-link",
+      class=`${activeRoute === "/catalog" && "router-link-exact-active"}`
+    ) Каталог
+    a(
+      href="/login"
+      class="nav-link",
+      class=`${activeRoute === "/login" && "router-link-exact-active"}`
+    ) Войти
+    a(
+      href="/registration"
+      class="nav-link",
+      class=`${activeRoute === "/Registration" && "router-link-exact-active"}`
+    ) Авторизоваться
+    
