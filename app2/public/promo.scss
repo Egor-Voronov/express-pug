@@ -1,0 +1,40 @@
+.promo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+
+  &-img {
+    margin-top: 20px;
+    width: 500px;
+    height: 500px;
+  }
+
+  &-txt {
+    font-weight: 900;
+    margin-top: 30px;
+    font-size: 20px;
+  }
+
+  &-btn {
+    width: 170px;
+    height: 50px;
+    border-radius: 100px;
+    background-color: #5142e6;
+    color: white;
+    transition: .3s linear;
+    cursor: pointer;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &:hover {
+      transition: .3s linear;
+      border: 1px #5142e6 solid;
+      background-color: rgba(255, 255, 255, 0);
+      color: #5142e6;
+    }
+  }
+}
