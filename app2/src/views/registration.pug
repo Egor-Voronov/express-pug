@@ -1,32 +1,31 @@
 extends ../components/layout
 
-
-
 block content
- div#login.container
-    div: form(method='#', class='form-vertical')
-      fieldset
-        legend: strong.text-info Registration page
+  div#registration.container
+    div
+      form(method='POST', action='/registration', class='form-vertical')
+        fieldset
+          legend: strong.text-info Registration page
 
-        div.form-group
-          label Войти:
-          input.form-control(name='login', autofocus)
+          div.form-group
+            label(for='login') Login:
+            input#login.form-control(name='login', autofocus)
 
-        div.form-group
-          label Почта:
-          input.form-control(name='email', autofocus)
+          div.form-group
+            label(for='email') Email:
+            input#email.form-control(name='email')
 
-        div.form-group
-        label Имя пользователя:
-        input.form-control(name='username', autofocus)
+          div.form-group
+            label(for='username') Username:
+            input#username.form-control(name='username')
 
-        div.form-group
-          label Пароль:
-          input.form-control(name='password', type='password')
+          div.form-group
+            label(for='password') Password:
+            input#password.form-control(name='password', type='password')
 
-        div.form-group
-          label Повторите пароль:
-          input.form-control(name='password', type='password')
+          div.form-group
+            label(for='confirm-password') Confirm Password:
+            input#confirm-password.form-control(name='confirm-password', type='password')
 
-        div.form-actions
-          input.btn.btn-primary(type='submit', value='Sign Up')
+          div.form-actions
+            input.btn.btn-primary(type='submit', value='Sign Up')

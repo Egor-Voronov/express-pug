@@ -2,17 +2,23 @@ extends ../components/layout
 
 block content
     div#login.container
-        div: form(method='#', class='form-vertical')
-            fieldset
-                legend: strong.text-info Login page
+        div
+            form(method='POST', action='/login', class='form-vertical')
+                fieldset
+                    legend: strong.text-info Login page
 
-                div.form-group
-                    label Username:
-                    input.form-control(name='username', autofocus)
+                    div.form-group
+                        label(for='username') Username:
+                        input#username.form-control(name='username', autofocus)
 
-                div.form-group
-                    label Password:
-                    input.form-control(name='password', type='password')
+                    div.form-group
+                        label(for='password') Password:
+                        input#password.form-control(name='password', type='password')
 
-                div.form-actions
-                    input.btn.btn-primary(type='submit', value='Login')
+                    div.form-actions
+                        input.btn.btn-primary(type='submit', value='Login')
+
+                        if user
+                            p Welcome, #{user.username}
+                        else
+                            p You are not logged in

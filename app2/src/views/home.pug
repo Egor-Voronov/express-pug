@@ -1,3 +1,20 @@
 extends ../components/layout
-
 block content
+    - var users = 'Egor, Test1'
+    div(class='home-div')
+        img(src='https://i.stack.imgur.com/gsaue.png',
+            alt='Product Image' class='home-img')
+        img(src='https://sun9-west.userapi.com/sun9-62/s/v1/ig2/natkqgu32X_x5vFxwcEyFAYGhFsYKS2zIdlLU0B53ZKkfiD5zGp0km-GUhYllQpz8LmJZKka0LwiX2CQ0NmBlXWm.jpg?size=342x355&quality=96&type=album',
+            alt='Product Image' class='home-img')
+        img(src='https://sun9-east.userapi.com/sun9-58/s/v1/ig2/KnPN3L5BXuIZHi6zpb6Y3DI5uRUESy0A_pNy5MDS9D5xtVAuWHcjk-ko6lLvmu10QWWPd9UcDsF2sjXIBHw3l3F_.jpg?size=909x516&quality=96&type=album',
+            alt='Product Image' class='home-img')
+        div(class='home-div home-txt')
+            | Давайте представим, что у вас есть бизнес, который вы хотите развивать и увеличивать прибыль. Согласно исследованию, проведенному компанией Forbes, более 80% предпринимателей считают, что рост бизнеса требует многих усилий и ресурсов, а также понимания того, какие шаги необходимо предпринять, чтобы добиться успеха.
+            br
+            br
+            | Мы также предлагаем услуги по управлению социальными сетями, поскольку, согласно исследованию, проведенному компанией eMarketer, более 70% пользователей Интернета активно пользуются социальными сетями. Мы поможем вам привлечь больше подписчиков и клиентов через социальные сети, и создадим для вас рекламные кампании, чтобы увеличить вашу аудиторию.
+            br
+            br
+            | Мы готовы помочь вашему бизнесу расти и развиваться. Согласно исследованию, проведенному компанией McKinsey, более 50% компаний, которые внедряют новые технологии, увеличивают свою прибыль. Наша команда профессионалов всегда готова выслушать ваши потребности и            h1(class='home-big')
+            br
+            h1 Список пользователей: #{users}
